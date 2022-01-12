@@ -30,7 +30,7 @@ public class SimpleHTTPServer {
                     line = reader.readLine();
                 }
                 Date today = new Date();
-                String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + today ;
+                String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + today;
                 clientSocket.getOutputStream().write(httpResponse.getBytes(StandardCharsets.UTF_8));
 
             }
